@@ -8,18 +8,20 @@
 
 int main() {
     // this function calculates circumference
-    const double TAU = 6.28;
-    int radius;
-    double circumference;
-
+    int width;
+    int height;
     // input
-    std::cout << "enter radius (mm): ";
-    std::cin >> radius;
+    std::cout << "enter width: ";
+    std::cin >> width;
+    std::cout << "enter height: ";
+    std::cin >> height;
 
     // process
-    circumference = TAU*radius;
-
+    if (width == height) {
+        std::cout << "it is a square" << std::endl;
+    } else {
+    std::cout << "it is a rectangle" << std::endl;
+    }
     // output
-    std::cout << "" << std::endl;
-    std::cout << "circumference is " << circumference << "mm" << std::endl;
+    std::cout << "\nDone." << std::endl;
 }
